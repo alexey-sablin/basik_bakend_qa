@@ -14,6 +14,10 @@ class Parent
     raise InvalidAgeError unless valid_age?
   end
 
+  def info
+    puts "Hello, my name is #{@first_name}, my last name is #{@last_name} and i am #{@age} years old."
+  end
+
   private
 
   def valid_age?
